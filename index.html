@@ -176,6 +176,12 @@
 			Calculating Square:
 			<input type="text" id="num" placeholder="Type in a number"> <sup> 2 </sup> =
 			<label id="squareresult"> ? </label>
+      <script>
+        function calcSquare(){
+          var number = parseInt.getElementById('num2').value;
+        }
+
+      </script>
 
 		</div>
 
@@ -223,6 +229,23 @@
 			</p>
 
 			<script type="text/javascript">
+      function getPrice(){
+        var yearCar.getElementById('years').vslue;
+        var conditionCar.getElementById('condition').vslue;
+        var boxindex = document.getElementById('year').selectedIndex;
+        console.log(yearCar+" "+conditionCar);
+        var price = 0;
+        if (yearCar=="2003" && conditionCar =="Good"){
+          price = 3500;
+        }
+        else if (yearCar=="2004" && conditionCar =="fair"){
+          price = 4500;
+        }
+        document.getElementById('price').textContent=price.toString();
+
+      }
+      document.getElementById('year').addEventListener('change', getPrice);
+      document.getElementById('condition').addEventListener('change', getPrice);
 
 
 
